@@ -1,0 +1,44 @@
+# site settings
+title: Ja-cob
+subtitle: a place for projects
+email: jbass0435@gmail.com
+description: A gateway to things I've worked on.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: # the base hostname & protocol for your site
+#author:
+#street_address: 1234 Somewhere Road
+city: Marble Falls
+state: Tx
+#zip_code: 55555
+country: United States of America
+#phone: (716) 555-5555
+
+# homepage tiles
+tiles-source: posts # accepts "posts" or "pages"
+tiles-count: 6
+
+# social settings (key must match name of font awesome icon)
+# see https://fontawesome.com/icons?d=gallery&p=2&s=brands
+# Icons are not shown if value is empty
+# You need to restart jekyll for changes to have an effect
+socials:
+  GitHub: https://github.com/ja-cob
+  GitLab:
+  Google-Plus: 
+  Instagram: https://instagram.com/deadly.duck
+  LinkedIn: https://www.linkedin.com/in/jacobaaronbass
+  Twitter: 
+  Facebook:
+  Slack:
+
+# build settings
+markdown: kramdown
+
+sass:
+  style: compressed
+
+exclude:
+- "*.gemspec"
+- LICENSE.md
+- CONTRIBUTING.md
+- README.md 
