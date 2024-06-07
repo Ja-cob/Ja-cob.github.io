@@ -1,18 +1,30 @@
-<!DOCTYPE html>
-<!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+---
+layout: default
+---
 
-{% include head.html %}
+<main id="main" class="main-content" aria-label="Content">
+  <article>
+    {% include page-image.html %}
+    <div class="page-wrapper">
+      <header class="page-header">
+        {% if page.id %}
+          {% assign title = page.title | markdownify | strip_html %}
+        {% else %}
+          {% assign title = page.title %}
+        {% endif %}
+        {% if page.link %}
+          <h1 id="page-title" class="page-title"><a href="{{ page.link }}">{{ title }} <span class="link-arrow">&rarr;</span></a></h1>
+        {% else %}
+          <h1 id="page-title" class="page-title">{{ title }}</h1>
+        {% endif %}
+      </header>
+      <div class="page-content">
+        {{ content }}
 
-<body>
-    <script type="text/javascript">document.body.classList.add("is-loading");</script>
-
-    {% include header.html %} {{ content }} {% include footer.html %}
-
-</body>
-
-</html>
+        {% if page.share %}
+          {% include social-share.html %}
+        {% endif %}
+      </div>
+    </div>
+  </article>
+</main>

@@ -1,0 +1,10 @@
+# Sample site navigation bar links
+
+- title: Home
+  url: /
+- title: Posts
+  url: /posts/
+- title: About
+  url: /about
+- title: Freelance
+  url: https://caprawave.com
