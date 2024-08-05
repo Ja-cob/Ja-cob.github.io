@@ -1,7 +1,9 @@
 ---
-title: Post Archive
-layout: posts
-permalink: /posts/
-show_excerpts: true
-entries_layout: list
+layout: page
+title: Posts
+pagination:
+  enabled: true
 ---
+
+{% include postlist.html %}
+{% include pagination.html %}
