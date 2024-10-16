@@ -1,24 +1,14 @@
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
 
-  <title>
-    {% if page.layout == "home" %}
-    {{ site.title }}
-    {% else %}
-    {{ site.title }} &middot; {{ page.title }}
-    {% endif %}
-  </title>
-
-  <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/open-color.min.css' | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/syntax.css' | prepend: site.url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/styles.min.css' | prepend: site.url }}">
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/apple-touch-icon.png' | prepend: site.url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/favicon-32x32.png' | prepend: site.url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/assets/favicon-16x16.png' | prepend: site.url }}">
-  <link rel="manifest" href="{{ '/assets/site.webmanifest' | prepend: site.url }}">
-  <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ '/atom.xml' | prepend: site.url }}">
-
-  {% seo title=false %}
+  {%- include custom-head.html -%}
+  
 </head>

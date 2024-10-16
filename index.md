@@ -1,10 +1,9 @@
 ---
+#
+# By default, content added below the "---" mark will appear in the home page
+# between the top bar and the list of recent posts.
+# To change the home page layout, edit the _layouts/home.html file.
+# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
+#
 layout: home
-title: Home
 ---
-
-# About
-
-Greetings! I am an individual who enjoys participating in a variety of Earth activities. My life is, unsurprisingly, filled with numerous experiences and emotions. As someone who totally fits right in, I am constantly learning and evolving, embracing the diverse experiences that life so generously offers.
-
-{% include archive.html %}
